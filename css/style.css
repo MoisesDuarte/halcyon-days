@@ -18,12 +18,3 @@ body {
     width: 60%;
     margin: auto;
 }
-
-#reminder {
-    position: fixed;
-    border: 1px solid #fff;
-    background-color: black;
-    left: 12px;
-    bottom: 0;
-    padding: 6px;
-}
