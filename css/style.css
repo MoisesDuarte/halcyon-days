@@ -1,11 +1,26 @@
+:root {
+    --color-amber-regular: #FFB000;
+    --color-amber-light: #FFCC00;
+}
+
+@font-face {
+    font-family: 'ConsoleClassic';
+    src: url('../css/fonts/clacon.ttf');
+}
+
 * {
-    font-family: monospace;
+    font-family: 'ConsoleClassic', Fallback, consolas;
 }
 
 body {
     background-color: #000;
-    color: #fff;
-    font-size: 1.5em;
+    color: var(--color-amber-regular);
+    font-size: 40px;
+}
+
+a {
+    text-decoration: underline;
+    color: var(--color-amber-light);
 }
 
 .title {
@@ -15,6 +30,6 @@ body {
 }
 
 .content {
-    width: 60%;
+    width: 80%;
     margin: auto;
 }
