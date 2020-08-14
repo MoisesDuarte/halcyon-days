@@ -14,13 +14,13 @@
 
 body {
     background-color: #121212;
-    color: var(--color-amber-regular);
+    color: var(--color-amber-light);
     font-size: 40px;
 }
 
 a {
     text-decoration: underline;
-    color: var(--color-amber-light);
+    color: var(--color-amber-regular);
 }
 
 .title {
