@@ -2,13 +2,13 @@
 let main_container = document.querySelector(".content");
 let current_page = document.querySelector("#page_number");
 let total_pages = document.querySelector("#total_pages");
-let paragraph_number = main_container.getElementsByTagName("p").length;
+let paragraph_number = main_container.getElementsByTagName("div").length;
 
 total_pages.innerHTML = paragraph_number;
 
 function pageTurn(dir) {
     // Getting the current paragraph
-    let current_paragraph = document.querySelector("p:not(.hide)");
+    let current_paragraph = document.querySelector("div:not(.hide)");
     let prev_id = parseInt(current_paragraph.id) - 1;
     let next_id = parseInt(current_paragraph.id) + 1;
     let prev_paragraph = document.getElementById(prev_id);
