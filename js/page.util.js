@@ -14,14 +14,14 @@ function pageTurn(dir) {
     let prev_paragraph = document.getElementById(prev_id);
     let next_paragraph = document.getElementById(next_id);
 
-    if (dir == 'next') {
+    if (dir === 'next') {
         // Checking if there is a next one
         if (next_id <= paragraph_number) {
             current_paragraph.className = "hide";    
             next_paragraph.className = "";
             current_page.innerHTML++;
         }  
-    } else if (dir == 'back') {
+    } else if (dir === 'back') {
         // Checking if there is a previous one
         if (prev_id > 0) {
             current_paragraph.className = "hide";
