@@ -2,7 +2,7 @@
 A collection of narratives in HTML pages
 
 ## Description
-An excuse to pratice CSS formatting, narrative structure and writing in a language other than my own in one package. Pretty much a playground for random ideas.
+An excuse to pratice CSS formatting, narrative structure and writing in a language other than my own in one package. Pretty much a playground for random ideas and some weird ass writing.
 
 ## Todo
 - [ ] Write the following threads:
