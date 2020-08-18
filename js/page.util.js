@@ -1,34 +1,32 @@
-// TODO: Clean up this code. Learn some code golfing in the meantime.
 // Get the number of paragraphs in the page and the page counter
-mainContainer = document.querySelector(".content");
-currentPage = document.querySelector("#page_number");
-totalPages = document.querySelector("#total_pages");
+let main_container = document.querySelector(".content");
+let current_page = document.querySelector("#page_number");
+let total_pages = document.querySelector("#total_pages");
+let paragraph_number = main_container.getElementsByTagName("p").length;
 
-paragraphNumber = mainContainer.getElementsByTagName("p").length;
-totalPages.innerHTML = paragraphNumber;
+total_pages.innerHTML = paragraph_number;
 
-function pageTurn(direction) {
+function pageTurn(dir) {
     // Getting the current paragraph
-    currentParagraph = document.querySelector("p:not(.hide)");
-    nextId = parseInt(currentParagraph.id) + 1;
-    prevId = parseInt(currentParagraph.id) - 1;
+    let current_paragraph = document.querySelector("p:not(.hide)");
+    let prev_id = parseInt(current_paragraph.id) - 1;
+    let next_id = parseInt(current_paragraph.id) + 1;
+    let prev_paragraph = document.getElementById(prev_id);
+    let next_paragraph = document.getElementById(next_id);
 
-    if (direction == 'next') {
+    if (dir == 'next') {
         // Checking if there is a next one
-        if (nextId <= paragraphNumber) {
-            currentParagraph.className = "hide";
-            nextParagraph = document.getElementById(nextId);
-            nextParagraph.className = "";
-            currentPage.innerHTML++;
+        if (next_id <= paragraph_number) {
+            current_paragraph.className = "hide";    
+            next_paragraph.className = "";
+            current_page.innerHTML++;
         }  
-    } else if (direction == 'back') {
+    } else if (dir == 'back') {
         // Checking if there is a previous one
-        if (prevId > 0) {
-            currentParagraph.className = "hide";
-            prevParagraph = document.getElementById(prevId);
-            prevParagraph.className = "";
-            currentPage.innerHTML--;
+        if (prev_id > 0) {
+            current_paragraph.className = "hide";
+            prev_paragraph.className = "";
+            current_page.innerHTML--;
         } 
-    }
-     
+    }    
 }
