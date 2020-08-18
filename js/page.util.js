@@ -1,8 +1,11 @@
 // TODO: Clean up this code. Learn some code golfing in the meantime.
 // Get the number of paragraphs in the page and the page counter
 mainContainer = document.querySelector(".content");
-pageCounter = document.querySelector("#page_number");
+currentPage = document.querySelector("#page_number");
+totalPages = document.querySelector("#total_pages");
+
 paragraphNumber = mainContainer.getElementsByTagName("p").length;
+totalPages.innerHTML = paragraphNumber;
 
 function pageTurn(direction) {
     // Getting the current paragraph
@@ -16,7 +19,7 @@ function pageTurn(direction) {
             currentParagraph.className = "hide";
             nextParagraph = document.getElementById(nextId);
             nextParagraph.className = "";
-            pageCounter.innerHTML++;
+            currentPage.innerHTML++;
         }  
     } else if (direction == 'back') {
         // Checking if there is a previous one
@@ -24,7 +27,7 @@ function pageTurn(direction) {
             currentParagraph.className = "hide";
             prevParagraph = document.getElementById(prevId);
             prevParagraph.className = "";
-            pageCounter.innerHTML--;
+            currentPage.innerHTML--;
         } 
     }
      
