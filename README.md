@@ -6,7 +6,7 @@ An excuse to pratice CSS formatting, narrative structure and writing in a langua
 
 ## Todo
 - [ ] Write the following threads:
-    - [ ] Kitchen
+    - [x] Kitchen
     - [ ] Homeless
     - [ ] Hunting
 - [ ] Add some text effects to help with the presentation
