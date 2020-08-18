@@ -23,6 +23,26 @@ a {
     color: var(--color-amber-regular);
 }
 
+button {
+    font-size: 40px;
+    border: none;
+    background-color: transparent;
+    color: var(--color-amber-regular);
+    cursor: pointer;
+}
+
+.btn-left {
+    position: fixed;
+    top: 50%;
+    left: 0;
+}
+
+.btn-right {
+    position: fixed;
+    top: 50%;
+    right: 0; 
+}
+
 .title {
     font-weight: 400;
     text-align: center;
@@ -32,4 +52,8 @@ a {
 .content {
     width: 80%;
     margin: auto;
+}
+
+.hide {
+    display: none;
 }
