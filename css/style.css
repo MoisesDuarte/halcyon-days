@@ -16,6 +16,8 @@ body {
     background-color: #121212;
     color: var(--color-amber-light);
     font-size: 40px;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -23,7 +25,25 @@ a {
     color: var(--color-amber-regular);
 }
 
-button {
+/* Main Content */
+.title {
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.content {
+    width: 80%;
+    margin: auto;
+}
+
+.hide {
+    display: none;
+}
+
+/* Page Controls */
+.btn-left,
+.btn-right {
     font-size: 40px;
     border: none;
     background-color: transparent;
@@ -41,19 +61,4 @@ button {
     position: fixed;
     top: 50%;
     right: 0; 
-}
-
-.title {
-    font-weight: 400;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.content {
-    width: 80%;
-    margin: auto;
-}
-
-.hide {
-    display: none;
 }
