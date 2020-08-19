@@ -15,6 +15,7 @@
 body {
     background-color: #121212;
     color: var(--color-amber-light);
+    text-shadow: 0 0 5px var(--color-amber-regular);
     font-size: 40px;
     margin: 0;
     padding: 0;
